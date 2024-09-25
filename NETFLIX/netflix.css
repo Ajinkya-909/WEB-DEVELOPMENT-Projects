@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+.main {
+  background-image: url("box1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 70vh;
+  position: relative;
+}
+
+.box {
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  max-width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  nav img {
+    max-width: 100px;
+  }
+}
+
+nav img {
+  color: red;
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hero {
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.c1 {
+  font-weight: 999;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.c2 {
+  font-weight: 400;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.c3 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .c1 {
+    font-size: 2rem;
+  }
+  .c2 {
+    font-size: 0.75rem;
+  }
+  .c3 {
+    font-size: 0.5rem;
+  }
+}
+
+.line {
+  height: 7px;
+  background-color: rgb(61, 58, 58);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 4px;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-start {
+  color: white;
+  background-color: red;
+  border-radius: 4px;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-sign {
+  color: white;
+  background-color: red;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.hero-btn input {
+  color: white;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.hero-btn input {
+  background-color: transparent;
+  color: rgb(239, 241, 243);
+  padding-top: 14px;
+  padding-right: 140px;
+  padding-bottom: 11px;
+  padding-left: 14px;
+  font-weight: 900;
+  font-size: 12px;
+  border: 1px solid rgba(239, 241, 243, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  .hero-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .btn-start {
+    margin: auto;
+  }
+}
+/* boxes */
+
+.first {
+  max-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .first {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: justify;
+  width: 35%;
+  gap: 30px;
+}
+
+.t1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+}
+
+.t2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .area {
+    text-align: center;
+  }
+  .t1 {
+    font-size: 2.5rem;
+  }
+  .t2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .area {
+    text-align: center;
+  }
+  .t1 {
+    font-size: 2rem;
+  }
+  .t2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .area {
+    text-align: center;
+  }
+  .t1 {
+    font-size: 1.5rem;
+  }
+  .t2 {
+    font-size: 0.5rem;
+  }
+}
+
+.pic {
+  position: relative;
+}
+
+.pic img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+
+.pic video {
+  position: absolute;
+  width: 24vw;
+  top: 54px;
+  right: 30px;
+}
+
+@media (max-width: 1000px) {
+  .pic video {
+    right: 70px;
+  }
+  .box3 video {
+    left: 55px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .pic video {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .pic video {
+    top: 30px;
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pic video {
+    top: 20px;
+  }
+}
+
+/* For box 3 */
+
+.box3 {
+  position: relative;
+}
+
+.box3 img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+
+.box3 video {
+  position: absolute;
+  width: 19vw;
+  top: 25px;
+  right: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .box3 video {
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .box3 video {
+    left: 35px;
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box3 video {
+    left: 20px;
+    top: 10px;
+  }
+}
+
+.FAQ {
+  padding: 30px;
+  gap: 20px;
+}
+
+.FAQ h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+
+.questions {
+  max-width: 70vw;
+  height: auto;
+  margin: auto;
+}
+
+.ANS {
+  color: white;
+  background-color: rgb(46, 42, 42);
+  cursor: pointer;
+  width: 100%;
+  height: 15px;
+  padding: 30px;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.ANS:hover {
+  background-color: rgb(77, 71, 71);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .FAQ h2 {
+    font-size: 30px;
+  }
+  .ANS {
+    font-size: 20px;
+  }
+}

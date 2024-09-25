@@ -1,0 +1,33 @@
+.BACKGROUND {
+  border: 4px solid cyan;
+  box-shadow: -5px -5px 20px 10px rgb(19, 177, 177),
+    5px 5px 20px 10px rgb(19, 177, 177);
+}
+
+.VALUE {
+  width: 60%;
+}
+
+@media screen and (max-width: 655px) {
+  .info {
+    flex-direction: column;
+  }
+  .VALUE {
+    width: 90%;
+  }
+  .item {
+    flex-direction: column;
+  }
+}
+
+.green {
+  background-color: green;
+}
+
+.hook {
+  text-decoration: line-through;
+  color: black;
+  background-color: cyan;
+  padding: 10px;
+  border-radius: 20px;
+}

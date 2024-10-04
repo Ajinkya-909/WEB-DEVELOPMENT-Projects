@@ -85,6 +85,7 @@ function App() {
               return (
                 <div
                   key={id}
+                  id="LIST"
                   className="item w-4/5 m-1 p-1 flex items-center justify-between text-white "
                 >
                   <div id={todos.indexOf(item)} className="change text-xl">
